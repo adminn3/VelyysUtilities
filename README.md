@@ -38,4 +38,4 @@ Your `config.json` should look like the following.
 ```
 # This should be good for now.
 I dont plan to keep up with this repo so whatever files are uploaded are uploaded. Please do not beg me to upload recent files to the repo.
-I not responding to bugs. If they are **Severe** then I'll try my best to reach out to you.
+I'm not responding to bug dms. If they are **Severe** then I'll try my best to reach out to you.
