@@ -21,15 +21,9 @@ Your `config.json` should look like the following.
   "prefix": "prefix-gos-here(e.g: >, <, ?, //, -, etc.)",
 
   "owners": "name-or-id", // this can be used to identify the owner of the bot for example using eval command. ({prefix}eval client.config.owners)
-  
-  "mutedRoleId": "fuck no. we have timeout.",
-  
+    
   "moderatorRoleId": "DONT FILL THIS OUT", //with this if any command has this like const { moderatorRoleId } = bla bla **Delete it!** its useless. any thing with moderatorRoleId Delete it!
-
-  "welcomeChannelId": "welcome channelid?",
-
-  "suggestionChannelId": "suggestid?",
-
+  
   "token": "token-gos-here.",
 
   "mongo": "mongo-key-gos-here."
