@@ -20,7 +20,7 @@ Your `config.json` should look like the following.
   
   "prefix": "prefix-gos-here(e.g: >, <, ?, //, -, etc.)",
 
-  "owners": "name-or-id", // this can be used to identify the owner of the bot for example using eval command. ({prefix}eval client.config.owners)
+  "owners": "id(s)", // this can be used to identify the owner of the bot for example using eval command. ({prefix}eval client.config.owners)
     
   "moderatorRoleId": "DONT FILL THIS OUT", //with this if any command has this like const { moderatorRoleId } = bla bla **Delete it!** its useless. any thing with moderatorRoleId Delete it!
   
