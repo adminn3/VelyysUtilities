@@ -484,6 +484,16 @@ try {
     if(!message.member.permissions.has("KICK_MEMBERS")) {
       return;
     }
+/*setInterval(() => {
+    const channel = client.channels.cache.get('channel_id')
+    const messageArray = [`This bot was made by cats Thank them!`, `If you would like Mod click [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)`, `Beep boop. Robot here. Definitely not planning to take over the world.`, `View all the info you need on roles by clicking [here](https://discord.com/channels/890632750388887622/8950544895208448700).`, `We need slowmode in order to moderate chat properly, so please don't complain about it.`, `View all the info on bots by clicking [here](https://discord.com/channels/890632750388887622/954122395025809448).`, `Annoyed because I constantly repeat information you already know every 15 minutes? Too bad!`]
+    const random = messageArray[Math.floor(Math.random() * messageArray.length)]
+    const joe = new Discord.MessageEmbed()
+    .setColor('#ffc268')
+    .setDescription(`:infosymbol: ${random}`)
+    .setFooter('')
+    channel.send(joe)
+}, 1000000)*/
     
     /*const msg = client.snipes.get(message.channel.id)
     if(!msg) return message.reply({ content: `**No latest Deleted Message was Found.**` })
