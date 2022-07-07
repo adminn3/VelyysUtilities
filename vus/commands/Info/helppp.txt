@@ -1,0 +1,49 @@
+const { MessageEmbed } = require('discord.js');
+const { Info } = require('../../emojis.json')
+const prefix = '>';
+
+module.exports = {
+    name: 'help',
+    aliases: [],
+    utilisation: '{prefix}test',
+
+    execute(client, message, args) {
+      /*if(message.author.id !== '501045011518062592') {
+        return message.reply("lol no")
+      }- so ifly cant see it lol ;-;*/ 
+
+      const embed = new MessageEmbed()
+        .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL() })
+        .setTitle(`My Prefix is \`${prefix}\`\n Here Are My Commands:`)
+        .addFields(
+          { name: "Moderation", value: "`ban`, `unban`, `dm`, `kick`, `mute`, `nick`, `purge`, `remove-timeout`, `removewarn`, `roleadd`, `roleremove`, `slowmode`, `lock`, `unlock`, `timeout`, `unmute`, `warn`", inline: false },
+          
+          { name: "Utility", value: "`calculate`, `suggest`, `mail`, `say`, `stats`, `translate`, `testlog` ", inline: false },
+          
+          { name: "Fun", value: "`8ball`, `random-color`, `random-number`, `ship`, `website`, `birthday`", inline: false },
+          { name: "General", value: "`avatar`, `ping`, `servericon`, `test`", inline: false },
+          
+          { name: "Games", value: "`findthenumber`, `secret-number`,", inline: false },
+          
+          
+          { name: "Image", value: "`meme`, `troll`, `yt-comment (WIP)`", inline: false },
+
+          { name: `Info`, value: "`help (This Command)`, `membercount`, `roleinfo`, `serverinfo`, `uptime`, `user-id`, `userinfo`, `warnings`, `weather`, `yt-search (WIP)`, `yt-stats (WIP)`, `selfharm`", inline: false },
+
+
+          { name: `Testing`, value: "`test`, `pages`", 
+           inline: false },//You could use inline true but will make the embed weird. - Sniper 9:03 PM 4/14/22
+
+          { name: "Owner", value: "`restart`, `eval`, `exec` "},
+
+          { name: "Faq", value: "`faq1`, `faq2`, `faq3`, `faq4`, `faq5`, `faq6`, `faqs`"}
+        )
+        .setFooter(`© Velyys Utilities • Replying to ${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
+        .setTimestamp() 
+        // .setImage("") /
+        // .setThumbnail("") 
+
+      message.reply({ content: "Imagine not knowing this. my creator always knows though.", embeds: [embed] });
+          
+    },
+};

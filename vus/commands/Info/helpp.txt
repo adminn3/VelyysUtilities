@@ -1,0 +1,35 @@
+const { MessageEmbed } = require('discord.js')
+const Discord = require('discord.js')
+
+module.exports = {
+  name: 'help',
+  aliases: ['hlp', 'hp'],
+
+  async execute(client, message, args) {
+
+
+    const helpEmbed = new Discord.MessageEmbed()
+      .setAuthor(`Help | ${client.user.username}`, client.user.displayAvatarURL({ dynamic: true }))
+    .setColor("ORANGE")
+    .setDescription('')
+    .addFields(
+      { name: '<:Settings:955516743713968178> Configuration', value: '`Coming soon.`' },
+
+      { name: '<:controller:955516743491653642> Fun', value: "`8ball`, `birthday`, `meme`, `randomcolor`, `randomnumber`, `ship`, `website`," },
+
+      { name: '<:Info:952713000257740840> Information', value: '`help`, `roleinfo`, `selfharm`, `serverinfo`, `uptime`, `userinfo`, `weather`, `yt-search`, `yt-stats`, `membercount`, `ping`'},
+
+      { name:  '<:Ban:955516743609090088> Moderation', value: '`ban`, `dm`, `kick`, `mute`, `nick`, `purge`, `remove-timeout`, `removewarn`, `slowmode`, `timeout`, `unban`, `unmute`, `warn`, '},
+
+      { name: ':tools: Utility', value: '`addrole`, `restart`, `say`, `stats`, `suggest`, `lock`, `unlock`, `removerole`, `translate`, `warnings`' },
+      
+      
+      
+
+ 
+    )
+      message.channel.send({ embeds: [helpEmbed] })
+
+      
+  }
+}

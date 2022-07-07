@@ -1,0 +1,16 @@
+const { MessageEmbed } = require('discord.js')
+const Discord = require('discord.js')
+
+module.exports = {
+  name: 'mute',
+  aliases: 'm',
+
+  async execute(client, message, args) {
+    const deprecated = new Discord.MessageEmbed()
+      .setTitle("Deprecated")
+    .setColor("ff4242")
+    .setDescription(`${client.user.username}, mute command is deprecated in favor of discords timeout feature.`)
+
+    return message.channel.send({ embeds: [deprecated], ephemeral: true })
+  }
+}

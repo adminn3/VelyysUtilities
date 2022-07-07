@@ -1,0 +1,18 @@
+const client = require('./index')
+const ms = require('ms')
+
+client.on('guildMemberAdd', async (member, message, guild) => {
+
+let minAge = ms("7 days")
+let createdAt = new Date(member.user.createdAt).getTime()
+let Dif = Date.now() - createdAt
+
+if (minAge > Dif) {
+    member.ban({
+        reason: "Alt account."
+    })
+
+
+}
+
+})
