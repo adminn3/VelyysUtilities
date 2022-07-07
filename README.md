@@ -30,6 +30,8 @@ Your `config.json` should look like the following.
   
 }
 ```
+7. Do `npm i discord.js@13.6.0` then just do `npm i` And the dependicies should download with no problem.
+8. Expect bugs. (Not all repos are 100% working.)
 # This should be good for now.
 I dont plan to keep up with this repo so whatever files are uploaded are uploaded. Please do not beg me to upload recent files to the repo.
 I'm not responding to bug dms. If they are **Severe** then I'll try my best to reach out to you.
